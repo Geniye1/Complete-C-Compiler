@@ -31,10 +31,9 @@ done
 files_2_cumpile=""
 for entry in "$path"/*
 do
-  echo "FILE: $entry"
-
   if [[ "$entry" = *.c ]]
   then
+    echo "FILE: $entry"
     filename="${entry:2}"
     files_2_cumpile+="${filename} "
   fi
